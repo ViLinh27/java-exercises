@@ -111,54 +111,6 @@ public class LinkedList {
         // return list
         return list;
     }
-
-    // driver code
-    public static void main(String[] args) {
-        // start with empty list!
-        LinkedList list = new LinkedList();
-
-        // Where the insertion happens!!!!
-        // inser values here:
-        list = insert(list, 1);
-        list = insert(list, 3);
-        list = insert(list, 5);
-        list = insert(list, 7);
-        list = insert(list, 9);
-        list = insert(list, 11);
-
-        printList(list);
-        // Output:
-        // LinkedList: 1 3 5 7 9 11
-
-        // deletion test:------------
-
-        // delte node with value 1
-        // key at head
-        deleteByKey(list, 1);
-
-        printList(list);
-        // output:
-        // 1 found and deleted
-        // LinkedList: 3 5 7 9 11
-
-        // delete node with val 7
-        // key in middle
-        deleteByKey(list, 7);
-
-        printList(list);
-        // output:
-        // 7 found and deleted
-        // LinkedList: 3 5 9 11
-
-        // delete node with val 8
-        // key not in list
-        deleteByKey(list, 8);
-
-        printList(list);
-        // output:
-        // 8 not found
-        // LinkedList: 3 5 9 11
-    }
 }
 
 // ref code from :
